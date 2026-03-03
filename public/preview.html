@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dativo — Logo Kit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy: #022A5A;
+    --navy-light: #0a3a70;
+    --white: #FEFFFF;
+    --grey: #687A92;
+    --bg: #f4f5f7;
+    --card-bg: #ffffff;
+    --border: #e2e5ea;
+    --text: #1a1a2e;
+    --text-secondary: #6b7280;
+    --checkerboard: conic-gradient(#e8e8e8 25%, transparent 25%) 0 0 / 16px 16px,
+                    conic-gradient(#e8e8e8 25%, transparent 25%) 8px 8px / 16px 16px;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 48px 40px 40px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 15px;
+    color: rgba(254, 255, 255, 0.65);
+    max-width: 600px;
+  }
+
+  main {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+  @media (max-width: 768px) {
+    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--card-bg);
+    transition: box-shadow 0.2s;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .card-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    min-height: 160px;
+  }
+
+  .card-preview img {
+    max-width: 100%;
+    max-height: 120px;
+  }
+
+  .card-preview.large img {
+    max-height: 64px;
+  }
+
+  .card-preview.icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-preview.favicon img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .card-preview.favicon-sm img {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+  }
+
+  .bg-white { background: #ffffff; }
+  .bg-navy { background: var(--navy); }
+  .bg-checker { background: var(--checkerboard), #ffffff; }
+  .bg-grey { background: #9ca3af; }
+  .bg-dark { background: #1a1a2e; }
+
+  .card-info {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .card-meta {
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+
+  .usage-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .usage-table th {
+    text-align: left;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-bottom: 2px solid var(--border);
+    color: var(--text);
+  }
+
+  .usage-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+  }
+
+  .usage-table td:first-child {
+    font-weight: 500;
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 13px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .badge-primary { background: #dbeafe; color: #1e40af; }
+  .badge-icon { background: #fef3c7; color: #92400e; }
+  .badge-fav { background: #ede9fe; color: #6d28d9; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dativo — Logo Kit</h1>
+  <p>All logo variants extracted from the master file. SVG vector format — scale to any size. Use the reference table below for which file to use where.</p>
+</header>
+
+<main>
+
+  <!-- PRIMARY WORDMARKS -->
+  <div class="section">
+    <div class="section-title">Primary Wordmarks</div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-preview large bg-white">
+          <img src="logos/logo-dark-on-white.svg" alt="Dark on white">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Dark on White <span class="badge badge-primary">Primary</span></span>
+          <span class="card-meta">logo-dark-on-white.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview large bg-navy">
+          <img src="logos/logo-white-on-dark.svg" alt="White on dark">
+        </div>
+        <div class="card-info">
+          <span class="card-label">White on Navy</span>
+          <span class="card-meta">logo-white-on-dark.svg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSPARENT VARIANT -->
+  <div class="section">
+    <div class="section-title">Transparent Background (for colored surfaces)</div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-preview large bg-navy">
+          <img src="logos/logo-white-on-transparent.svg" alt="White on navy bg">
+        </div>
+        <div class="card-info">
+          <span class="card-label">On Navy</span>
+          <span class="card-meta">logo-white-on-transparent.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview large bg-dark">
+          <img src="logos/logo-white-on-transparent.svg" alt="White on dark bg">
+        </div>
+        <div class="card-info">
+          <span class="card-label">On Dark</span>
+          <span class="card-meta">same file</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview large bg-grey">
+          <img src="logos/logo-white-on-transparent.svg" alt="White on grey bg">
+        </div>
+        <div class="card-info">
+          <span class="card-label">On Grey</span>
+          <span class="card-meta">same file</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- D ICON -->
+  <div class="section">
+    <div class="section-title">D Icon Mark</div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-preview icon bg-white">
+          <img src="icons/icon-d-dark.svg" alt="D icon dark">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Dark <span class="badge badge-icon">Icon</span></span>
+          <span class="card-meta">icon-d-dark.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview icon bg-navy">
+          <img src="icons/icon-d-white.svg" alt="D icon white">
+        </div>
+        <div class="card-info">
+          <span class="card-label">White</span>
+          <span class="card-meta">icon-d-white.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview icon bg-checker">
+          <img src="icons/icon-d-dark.svg" alt="D icon transparent">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Transparent BG</span>
+          <span class="card-meta">checkerboard = transparent</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAVICONS -->
+  <div class="section">
+    <div class="section-title">Favicons &amp; App Icons</div>
+    <div class="grid grid-4">
+      <div class="card">
+        <div class="card-preview favicon bg-white">
+          <img src="favicons/favicon-circle.svg" alt="Favicon circle">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Circle <span class="badge badge-fav">Favicon</span></span>
+          <span class="card-meta">favicon-circle.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview favicon bg-white">
+          <img src="favicons/favicon-rounded.svg" alt="Favicon rounded">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Rounded</span>
+          <span class="card-meta">favicon-rounded.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview favicon bg-white">
+          <img src="favicons/favicon-square.svg" alt="Favicon square">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Square</span>
+          <span class="card-meta">favicon-square.svg</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview favicon-sm bg-checker" style="gap: 16px;">
+          <img src="favicons/favicon-rounded.svg" alt="16px" style="width:16px;height:16px;">
+          <img src="favicons/favicon-rounded.svg" alt="24px" style="width:24px;height:24px;">
+          <img src="favicons/favicon-rounded.svg" alt="32px" style="width:32px;height:32px;">
+          <img src="favicons/favicon-rounded.svg" alt="48px" style="width:48px;height:48px;">
+        </div>
+        <div class="card-info">
+          <span class="card-label">Size test</span>
+          <span class="card-meta">16 · 24 · 32 · 48</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- USAGE TABLE -->
+  <div class="section">
+    <div class="section-title">Usage Reference</div>
+    <div class="card" style="overflow-x: auto;">
+      <table class="usage-table">
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Use For</th>
+            <th>Background</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>logo-dark-on-white.svg</td>
+            <td>Website header, docs, light UI, print, letterhead</td>
+            <td>White / light surfaces</td>
+          </tr>
+          <tr>
+            <td>logo-white-on-dark.svg</td>
+            <td>Footer on navy, branded dark sections, slides with navy bg</td>
+            <td>Has own navy background</td>
+          </tr>
+          <tr>
+            <td>logo-white-on-transparent.svg</td>
+            <td>Dark hero sections, photo overlays, video, partner logos on dark</td>
+            <td>Any dark surface (no built-in bg)</td>
+          </tr>
+          <tr>
+            <td>icon-d-dark.svg</td>
+            <td>Slack workspace icon, GitHub org avatar (light theme), watermark</td>
+            <td>White / light surfaces</td>
+          </tr>
+          <tr>
+            <td>icon-d-white.svg</td>
+            <td>Icon on dark UI, loading spinner base, dark-mode avatar</td>
+            <td>Dark surfaces</td>
+          </tr>
+          <tr>
+            <td>favicon-circle.svg</td>
+            <td>Social media profile picture, circular avatar contexts</td>
+            <td>Self-contained (navy circle)</td>
+          </tr>
+          <tr>
+            <td>favicon-rounded.svg</td>
+            <td>Browser favicon, PWA icon, apple-touch-icon, app store</td>
+            <td>Self-contained (navy rounded rect)</td>
+          </tr>
+          <tr>
+            <td>favicon-square.svg</td>
+            <td>Windows tile, .ico generation, square icon contexts</td>
+            <td>Self-contained (navy square)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- COLOR REFERENCE -->
+  <div class="section">
+    <div class="section-title">Brand Colors</div>
+    <div class="grid grid-4">
+      <div class="card">
+        <div class="card-preview" style="background:#022A5A;min-height:80px;"></div>
+        <div class="card-info">
+          <span class="card-label">Navy</span>
+          <span class="card-meta">#022A5A</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview" style="background:#FEFFFF;min-height:80px;"></div>
+        <div class="card-info">
+          <span class="card-label">White</span>
+          <span class="card-meta">#FEFFFF</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview" style="background:#687A92;min-height:80px;"></div>
+        <div class="card-info">
+          <span class="card-label">Grey</span>
+          <span class="card-meta">#687A92</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-preview" style="background:#1A3A62;min-height:80px;"></div>
+        <div class="card-info">
+          <span class="card-label">Mid Navy</span>
+          <span class="card-meta">#1A3A62</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
