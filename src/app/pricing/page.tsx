@@ -5,7 +5,10 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Open core. Start free, scale commercially. Deploy Dativo on your infrastructure or ours.",
+    "Dativo Community Edition is free and open source. Professional and Enterprise editions for managed deployment, advanced connectors, and third-party data sharing.",
+  alternates: {
+    canonical: "https://dativo.dev/pricing",
+  },
 };
 
 const tiers = [

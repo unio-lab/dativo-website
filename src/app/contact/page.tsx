@@ -3,9 +3,12 @@ import Container from "@/components/Container";
 import RequestDemoForm from "./RequestDemoForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Request a Demo",
   description:
-    "Request a demo of Dativo's EU Data Act compliance platform. Schedule a call with our team to discuss your data sharing requirements.",
+    "Schedule a demo of Dativo to see how it operationalizes EU Data Act compliance for your connected products.",
+  alternates: {
+    canonical: "https://dativo.dev/contact",
+  },
 };
 
 export default function ContactPage() {

@@ -5,9 +5,12 @@ import CTABlock from "@/components/CTABlock";
 import Button from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: "Product",
+  title: "Product — Platform Overview",
   description:
-    "Explore the Dativo platform — equipment identity resolution, dataset mapping, customer self-service, fulfillment tracking, and compliance audit tools.",
+    "Equipment identity resolution, dataset cataloging, customer self-service portal, fulfillment engine with SLA tracking, and compliance audit trail. Full EU Data Act Articles 3–6 coverage.",
+  alternates: {
+    canonical: "https://dativo.dev/product",
+  },
 };
 
 function CheckIcon() {

@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import Container from "@/components/Container";
 import SectionHeader from "@/components/SectionHeader";
 import FeatureCard from "@/components/FeatureCard";
 import CTABlock from "@/components/CTABlock";
 import Button from "@/components/Button";
 import HeroIllustration from "@/components/HeroIllustration";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://dativo.dev",
+  },
+};
 
 function HeroSection() {
   return (

@@ -4,9 +4,12 @@ import CTABlock from "@/components/CTABlock";
 import Button from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: "Solutions",
+  title: "Solutions — By Industry",
   description:
-    "EU Data Act compliance solutions organized by regulatory challenge — Articles 3–4 data access, trade secret protection, third-party sharing, and audit readiness.",
+    "EU Data Act compliance for pumps & valves, HVAC systems, construction machinery, energy equipment, industrial automation, and process manufacturing.",
+  alternates: {
+    canonical: "https://dativo.dev/solutions",
+  },
 };
 
 const challenges = [

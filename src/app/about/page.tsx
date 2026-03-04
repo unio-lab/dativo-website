@@ -3,9 +3,12 @@ import Container from "@/components/Container";
 import CTABlock from "@/components/CTABlock";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Dativo",
   description:
-    "Dativo builds open-core compliance infrastructure for the EU Data Act. Learn about our mission, our team, and our commitment to open source.",
+    "Dativo builds compliance infrastructure for the EU Data Act. Purpose-built for industrial manufacturers of connected products.",
+  alternates: {
+    canonical: "https://dativo.dev/about",
+  },
 };
 
 export default function AboutPage() {
