@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 import {
   OrganizationJsonLd,
   SoftwareApplicationJsonLd,
@@ -82,12 +84,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* HubSpot tracking script (optional — only loads if portal ID is set) */}
+        {process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID && (
+          <Script
+            id="hs-script-loader"
+            strategy="afterInteractive"
+            src={`//js.hs-scripts.com/${process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID}.js`}
+          />
+        )}
+      </head>
       <body className="font-body antialiased">
         <OrganizationJsonLd />
         <SoftwareApplicationJsonLd />
         <Header />
         <main>{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
