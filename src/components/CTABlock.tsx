@@ -12,7 +12,7 @@ export default function CTABlock({
   title,
   description,
   buttonText = "Request a Demo",
-  buttonHref = "/contact",
+  buttonHref = "/demo",
 }: CTABlockProps) {
   return (
     <section className="bg-navy py-20">

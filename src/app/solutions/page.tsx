@@ -141,7 +141,7 @@ export default function SolutionsPage() {
         title="Map your compliance obligations to platform capabilities"
         description="Our team can walk you through how Dativo addresses your specific EU Data Act challenges. Schedule a demo."
         buttonText="Request a Demo"
-        buttonHref="/contact"
+        buttonHref="/demo"
       />
     </>
   );

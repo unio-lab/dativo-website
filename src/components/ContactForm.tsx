@@ -230,7 +230,11 @@ export default function ContactForm() {
         </button>
 
         <p className="text-center text-xs text-grey-accent">
-          Or book a demo directly using the calendar below.
+          By submitting this form, you agree to our{" "}
+          <a href="/privacy" className="underline hover:text-navy">
+            privacy policy
+          </a>
+          .
         </p>
       </form>
     </div>

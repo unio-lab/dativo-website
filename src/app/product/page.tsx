@@ -54,7 +54,7 @@ function ProductHero() {
             equipment install base to fulfilling customer data requests.
           </p>
           <div className="mt-10">
-            <Button href="/contact" variant="primary">
+            <Button href="/demo" variant="primary">
               Request a Demo
             </Button>
           </div>
@@ -260,7 +260,7 @@ export default function ProductPage() {
         title="See the platform in action"
         description="Schedule a personalized demo to learn how Dativo can operationalize your EU Data Act compliance."
         buttonText="Request a Demo"
-        buttonHref="/contact"
+        buttonHref="/demo"
       />
     </>
   );

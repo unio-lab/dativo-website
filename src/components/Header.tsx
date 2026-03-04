@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/solutions", label: "Solutions", external: false },
   { href: "/about", label: "About", external: false },
   { href: "/pricing", label: "Pricing", external: false },
+  { href: "/contact", label: "Contact", external: false },
   { href: "https://github.com/unio-lab/dativo", label: "GitHub", external: true },
 ];
 
@@ -61,7 +62,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:block">
-          <Button href="/contact" variant="primary">
+          <Button href="/demo" variant="primary">
             Request Demo
           </Button>
         </div>
@@ -115,7 +116,7 @@ export default function Header() {
               )
             )}
             <div className="pt-2">
-              <Button href="/contact" variant="primary" className="w-full">
+              <Button href="/demo" variant="primary" className="w-full">
                 Request Demo
               </Button>
             </div>

@@ -39,7 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
-      priority: 0.6,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/demo`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/privacy`,

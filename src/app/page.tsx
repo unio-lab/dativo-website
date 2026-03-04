@@ -30,7 +30,7 @@ function HeroSection() {
             Regulation (EU)&nbsp;2023/2854.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button href="/contact" variant="primary">
+            <Button href="/demo" variant="primary">
               Request a Demo
             </Button>
             <Button href="https://github.com/unio-lab/dativo" variant="secondary">
@@ -304,7 +304,7 @@ export default function HomePage() {
         title="The EU Data Act is in force. Are you compliant?"
         description="Join the manufacturers already using Dativo to operationalize their data sharing obligations. Deploy the Community Edition or schedule a demo with our team."
         buttonText="Request a Demo"
-        buttonHref="/contact"
+        buttonHref="/demo"
       />
     </>
   );
