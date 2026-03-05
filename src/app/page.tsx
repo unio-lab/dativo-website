@@ -98,14 +98,14 @@ function HowItWorksSection() {
       actor: "Manufacturer",
       title: "Register your equipment install base",
       description:
-        "Import equipment records via CSV or API. The platform resolves conflicting identifiers — serial numbers, SAP IDs, asset tags — and builds a unified equipment registry with quality scoring.",
+        "Import equipment records via CSV or API. The platform resolves conflicting identifiers — serial numbers, SAP IDs, asset tags — and learns your naming conventions to handle edge cases automatically. Unified equipment registry with quality scoring.",
     },
     {
       step: "02",
       actor: "Manufacturer",
       title: "Map data to equipment and classify",
       description:
-        "Connect your data sources (CSV included, Snowflake and Databricks with Commercial). Map datasets to equipment types. Classify trade secrets. The platform tracks what data exists for which equipment.",
+        "Connect your data sources (CSV included, Snowflake and Databricks with Commercial). The platform analyzes your data and auto-suggests mapping rules — you review and approve. Classify trade secrets. It tracks what data exists for which equipment.",
     },
     {
       step: "03",
@@ -148,7 +148,7 @@ function HowItWorksSection() {
 }
 
 function CapabilitiesSection() {
-  const capabilities = [
+  const coreCapabilities = [
     {
       title: "Equipment Identity Resolution",
       description:
@@ -231,6 +231,42 @@ function CapabilitiesSection() {
     },
   ];
 
+  const advancedCapabilities = [
+    {
+      title: "Equipment Identity Resolution (Smart Matching)",
+      description:
+        "Your install base uses different identifiers across SAP, CRM, and service records. The platform learns your naming conventions and proposes matches with confidence scores. Review, correct, and it gets smarter. Onboarding cycles drop from 40 hours to under 2.",
+      icon: (
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+        </svg>
+      ),
+      badge: "AI",
+    },
+    {
+      title: "Auto-Suggested Data Mapping",
+      description:
+        "When you add a dataset, the platform analyzes its structure against your confirmed configurations and proposes mapping rules — which equipment type, which measurements, which transformations. You review and approve. Each confirmation makes the next one more accurate.",
+      icon: (
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+        </svg>
+      ),
+      badge: "AI",
+    },
+    {
+      title: "Natural Language Data Explorer",
+      description:
+        "Instead of navigating filters and dataset catalogs, your customers type what they need: 'pressure data from our pumps in Building 3, last quarter.' The platform finds the right data, checks permissions, and delivers it — or routes it through your fulfillment workflow.",
+      icon: (
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+        </svg>
+      ),
+      badge: "AI",
+    },
+  ];
+
   return (
     <section className="bg-navy/[0.02] py-20 sm:py-24">
       <Container>
@@ -239,13 +275,50 @@ function CapabilitiesSection() {
           title="Everything you need for Data Act compliance"
           description="A purpose-built platform covering the full scope of your data sharing obligations under the EU Data Act."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {capabilities.map((cap) => (
+
+        {/* Core Capabilities */}
+        <div className="mt-16 flex items-center gap-4">
+          <div className="h-px flex-1 bg-navy/10" />
+          <p className="text-xs font-semibold uppercase tracking-wider text-grey-accent">
+            Core Platform
+          </p>
+          <div className="h-px flex-1 bg-navy/10" />
+        </div>
+        <p className="mt-3 text-center text-sm text-grey-accent">
+          The foundational capabilities to operationalize your EU Data Act obligations. 
+        </p>
+        <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {coreCapabilities.map((cap) => (
             <FeatureCard
               key={cap.title}
               title={cap.title}
               description={cap.description}
               icon={cap.icon}
+            />
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div className="mt-16 flex items-center gap-4">
+          <div className="h-px flex-1 bg-navy/10" />
+          <p className="text-xs font-semibold uppercase tracking-wider text-grey-accent">
+            Operational Intelligence
+          </p>
+          <div className="h-px flex-1 bg-navy/10" />
+        </div>
+        <p className="mt-3 text-center text-sm text-grey-accent">
+          The same compliance workflows — without the manual bottlenecks. The platform proposes, your team decides.
+        </p>
+
+        {/* Advanced Capabilities */}
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {advancedCapabilities.map((cap) => (
+            <FeatureCard
+              key={cap.title}
+              title={cap.title}
+              description={cap.description}
+              icon={cap.icon}
+              badge={cap.badge}
             />
           ))}
         </div>

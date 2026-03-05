@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Dativo",
   },
   description:
-    "Operational platform for connected product manufacturers to comply with the EU Data Act (Regulation (EU) 2023/2854). Equipment registry, data sharing, trade secret protection, and compliance audit trail.",
+    "Operational platform for connected product manufacturers to comply with the EU Data Act. Equipment registry with smart matching, automated data mapping, customer self-service, fulfillment with SLA tracking, and compliance audit trail.",
   keywords: [
     "EU Data Act",
     "Data Act compliance",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Dativo",
     title: "Dativo — EU Data Act Compliance Platform",
     description:
-      "Operational platform for connected product manufacturers to comply with the EU Data Act. Equipment registry, data sharing, and compliance audit trail.",
+      "Operational platform for connected product manufacturers to comply with the EU Data Act. Equipment registry with smart matching, automated data mapping, customer self-service, fulfillment with SLA tracking, and compliance audit trail.",
     images: [
       {
         url: "/opengraph/og-image.png",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dativo — EU Data Act Compliance Platform",
     description:
-      "Compliance platform for connected product manufacturers under the EU Data Act.",
+      "Compliance platform for connected product manufacturers under the EU Data Act. Smart matching, automated data mapping, and self-service data access.",
     images: ["/opengraph/og-image.png"],
   },
   robots: {

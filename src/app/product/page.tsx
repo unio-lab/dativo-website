@@ -94,7 +94,7 @@ function ManufacturerSection() {
     {
       title: "Trade Secret Classification",
       description:
-        "Classify datasets as trade secrets with economic damage justification. Manage withholding records and confidentiality agreements. (Commercial)",
+        "Classify datasets as trade secrets with economic damage justification. Manage withholding records and confidentiality agreements.",
     },
     {
       title: "Compliance Monitoring",
@@ -235,7 +235,7 @@ function ArchitectureSection() {
     <section className="bg-navy/[0.02] py-20 sm:py-24">
       <Container>
         <SectionHeader
-          label="Architecture"
+          label="For Developers"
           title="Built for enterprise deployment"
         />
         <div className="mt-12 grid gap-8 md:grid-cols-2">

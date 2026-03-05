@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Dativo Community Edition is free and open source. Professional and Enterprise editions for managed deployment, advanced connectors, and third-party data sharing.",
+    "Dativo Community Edition is free and open source. Professional and Enterprise editions add smart matching, auto-suggested data mapping, managed deployment, advanced connectors, and third-party data sharing.",
   alternates: {
     canonical: "https://dativo.dev/pricing",
   },
@@ -50,8 +50,9 @@ const tiers = [
       "Compliance dashboard with regulatory export",
       "Third-party data recipient flows (Art. 5–6)",
       "Pre-contractual transparency disclosures",
-      "Intelligent equipment identity resolution",
+      "Equipment Identity Resolution (Smart Matching)",
       "Auto-suggested data mapping",
+      "Natural Language Data Explorer",
       "Advanced RBAC",
       "Priority support with SLA",
     ],
@@ -117,11 +118,11 @@ export default function PricingPage() {
                     : "border-navy/10 bg-white"
                 }`}
               >
-                {tier.highlighted && (
+                {/* {tier.highlighted && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1 text-xs font-semibold text-navy shadow-sm">
                     Most Popular
                   </div>
-                )}
+                )} */}
                 <p
                   className={`text-xs font-semibold uppercase tracking-wider ${
                     tier.highlighted ? "text-white/60" : "text-grey-accent"
