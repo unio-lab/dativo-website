@@ -7,6 +7,7 @@ import CookieConsent from "@/components/CookieConsent";
 import {
   OrganizationJsonLd,
   SoftwareApplicationJsonLd,
+  FAQPageJsonLd,
 } from "@/components/JsonLd";
 import "./globals.css";
 
@@ -98,6 +99,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <OrganizationJsonLd />
         <SoftwareApplicationJsonLd />
+        <FAQPageJsonLd />
         <Header />
         <main>{children}</main>
         <Footer />

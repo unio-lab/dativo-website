@@ -1,0 +1,249 @@
+# Dativo — Full Site Content
+
+> Dativo is an open-core compliance platform that enables manufacturers of connected products to share product-generated data with customers and authorized third parties, as required by the EU Data Act (Regulation (EU) 2023/2854).
+
+Dativo covers the full scope of Articles 3–6 of the EU Data Act: equipment identity resolution, dataset cataloging and mapping, trade secret classification, customer self-service data access, fulfillment with SLA tracking, third-party data sharing workflows, and FRAND compensation management.
+
+Target users are compliance officers, CTOs, and digital transformation leads at mid-sized EU industrial manufacturers (pumps & valves, HVAC, construction machinery, energy equipment, industrial automation, process manufacturing).
+
+The Community Edition is available under BSL 1.1 on GitHub. The Commercial Edition adds managed deployment, Snowflake/Databricks connectors, third-party data sharing, and AI-assisted features.
+
+---
+
+## Homepage
+
+### EU Data Act compliance for connected product manufacturers
+
+Dativo is the operational platform that enables manufacturers of connected products to share product-generated data with customers and authorized third parties — as required by Articles 3–6 of Regulation (EU) 2023/2854.
+
+### The Challenge: What the EU Data Act means for manufacturers
+
+Connected product manufacturers face a new regulatory reality.
+
+**The EU Data Act is in effect.** Regulation (EU) 2023/2854 is enforceable since September 2025. Manufacturers of connected products must provide customers with access to product-generated data. Non-compliance carries penalties of up to 4% of global annual turnover. This is not a future obligation — it is a current one.
+
+**Your equipment data lives in silos.** Equipment data is scattered across Snowflake, Databricks, legacy SQL databases, SAP, and IIoT platforms. You can't share what you can't find. Conflicting identifiers — serial numbers, SAP IDs, asset tags — make it nearly impossible to build a unified view of what data exists for which equipment.
+
+**Compliance is a continuous obligation.** This is not a one-time project. Every new customer, every new product line, every new data source needs to be mapped, classified, and made accessible. You need a platform that scales with your obligations, not a consulting engagement that ends with a report.
+
+### How It Works: From equipment registry to compliant data sharing
+
+Three steps to operationalize your EU Data Act obligations.
+
+**Step 1 — Manufacturer: Register your equipment install base.** Import equipment records via CSV or API. The platform resolves conflicting identifiers — serial numbers, SAP IDs, asset tags — and learns your naming conventions to handle edge cases automatically. Unified equipment registry with quality scoring.
+
+**Step 2 — Manufacturer: Map data to equipment and classify.** Connect your data sources (CSV included, Snowflake and Databricks with Commercial). The platform analyzes your data and auto-suggests mapping rules — you review and approve. Classify trade secrets. It tracks what data exists for which equipment.
+
+**Step 3 — Customer: Customers access their data.** Self-service portal where customers see their equipment, browse available datasets, request access, and download data. Fulfillment queue with SLA tracking ensures requests are resolved on time.
+
+### Capabilities: Everything you need for Data Act compliance
+
+A purpose-built platform covering the full scope of your data sharing obligations under the EU Data Act.
+
+#### Core Platform
+
+- **Equipment Identity Resolution:** Unified registry with quality scoring and fuzzy identifier matching. Import thousands of equipment records and resolve conflicts automatically, with intelligent matching that improves over time.
+- **Dataset Catalog & Data Mapping:** Define data sources, configure mapping rules between raw datasets and equipment types, and manage schema associations. Auto-suggested mappings reduce manual configuration by up to 80%.
+- **Customer Self-Service Portal:** Branded portal for customers to view equipment, explore datasets, request data access, manage users, and designate third-party recipients. No support tickets required.
+- **Fulfillment Engine with SLA Tracking:** Task queue that tracks every data access request from submission to resolution. Built-in SLA monitoring ensures Article 4 timing requirements are met.
+- **Trade Secret Classification:** Classify datasets as trade secrets with economic damage justification. Manage withholding records and confidentiality agreements. Full Article 4(3) compliance.
+- **Compliance Audit Trail:** Every action logged with timestamps, actors, and legal basis. Compliance dashboard with regulatory export. Ready for supervisory authority review.
+- **Connector SDK:** Plugin architecture for data source connectors. CSV included. Snowflake, Databricks, and custom connectors available in Commercial. Build your own with the open SDK.
+- **Third-Party Data Sharing:** Complete Articles 5–6 workflow: customer-designated third parties, authorization verification, data scoping, FRAND compensation terms, and pre-contractual transparency.
+
+#### Operational Intelligence (AI-Assisted)
+
+- **Equipment Identity Resolution (Smart Matching):** Your install base uses different identifiers across SAP, CRM, and service records. The platform learns your naming conventions and proposes matches with confidence scores. Review, correct, and it gets smarter. Onboarding cycles drop from 40 hours to under 2.
+- **Auto-Suggested Data Mapping:** When you add a dataset, the platform analyzes its structure against your confirmed configurations and proposes mapping rules — which equipment type, which measurements, which transformations. You review and approve. Each confirmation makes the next one more accurate.
+- **Natural Language Data Explorer:** Instead of navigating filters and dataset catalogs, your customers type what they need: "pressure data from our pumps in Building 3, last quarter." The platform finds the right data, checks permissions, and delivers it — or routes it through your fulfillment workflow.
+
+### Industry Focus: Built for EU industrial manufacturers
+
+Dativo is purpose-built for manufacturers of connected products who must comply with the EU Data Act. Target industries include:
+
+- Pumps & Valves
+- HVAC Systems
+- Construction Machinery
+- Energy Equipment
+- Industrial Automation
+- Process Manufacturing
+
+### Frequently Asked Questions
+
+**What is the EU Data Act?**
+The EU Data Act (Regulation (EU) 2023/2854) is a regulation requiring manufacturers of connected products to share product-generated data with customers and authorized third parties. It has been enforceable since September 12, 2025.
+
+**What are the penalties for non-compliance?**
+Member states set their own penalty frameworks, but the regulation allows for fines of up to 4% of global annual turnover — the same ceiling as GDPR.
+
+**Which manufacturers are affected?**
+Any manufacturer of connected products sold in the EU that generate data through sensors, software, or network connectivity. This includes industrial machinery, HVAC systems, pumps, valves, construction equipment, energy systems, and consumer IoT devices.
+
+**What data must manufacturers share?**
+Under Article 3, manufacturers must make product data and related service data readily accessible to users. Under Article 4, users can request any data generated by their connected product. Under Articles 5–6, users can designate third parties to receive their data.
+
+**What is Article 4(3) trade secret protection?**
+Manufacturers can withhold specific data if disclosure would cause serious economic damage through trade secret exposure. However, they must provide structured justification under Directive (EU) 2016/943 and offer a confidentiality agreement as an alternative.
+
+**How long do manufacturers have to respond to data access requests?**
+The Data Act requires data to be made available "without undue delay" and within the same quality as the data holder receives. There is no fixed number of days, but the expectation from guidance documents is prompt fulfillment, typically interpreted as within 30 days.
+
+---
+
+## Product Page
+
+### The compliance platform for connected product data
+
+Dativo provides the complete infrastructure to manage your data sharing obligations under the EU Data Act — from registering your equipment install base to fulfilling customer data requests.
+
+#### For Manufacturer Admins
+
+- **Equipment Install Base Management:** Import equipment records, resolve identifier conflicts, and build a unified registry with quality scoring.
+- **Dataset Catalog & Data Mapping:** Define data sources, configure mapping rules between datasets and equipment types. Auto-suggested mappings reduce manual effort.
+- **Customer Organization Onboarding:** Onboard customer organizations with sites, business units, and consent tracking.
+- **Fulfillment Queue Management:** Monitor and manage data access requests. Track every request from submission to resolution with built-in SLA monitoring.
+- **Invite Management & Domain Rules:** Control who can access the platform with invitation-based onboarding and domain validation rules.
+- **Trade Secret Classification:** Classify datasets as trade secrets with economic damage justification. Manage withholding records and confidentiality agreements.
+- **Compliance Monitoring:** Dashboard with real-time compliance status, gap analysis, and regulatory export capabilities.
+
+#### For Customers
+
+- **Self-Service Registration:** Register directly or accept an invitation. Onboard your organization and manage your team.
+- **Equipment Browsing & Data Explorer:** Browse your installed equipment, see what data is available, and explore dataset details.
+- **Data Access Request Workflows:** Request access to specific datasets. Track request status and download data when approved.
+- **Third-Party Recipient Designation:** Designate authorized third parties to receive your equipment data under Articles 5–6.
+- **User Management:** Manage users within your organization with site-scoped access controls.
+
+#### For Compliance Reviewers
+
+- **Compliance Dashboard:** Real-time overview of compliance status across your equipment portfolio.
+- **Audit Trail Review:** Every action logged with timestamps, actors, and legal basis.
+- **Classification Record Review:** Review and manage trade secret classifications and withholding records.
+- **Regulatory Export:** Export compliance records in formats ready for supervisory authority review.
+
+#### For Developers
+
+- **Microservices Architecture:** 8 services with monolith composition for Community edition. Scale individual services as your compliance needs grow.
+- **Connector SDK:** Plugin-based architecture for data source connectors. CSV included. Build custom connectors with the open SDK.
+- **Feature Flags:** Community and Commercial capabilities gated via configuration. One codebase, one architecture, different feature sets.
+- **PostgreSQL:** Works with managed databases (RDS, Cloud SQL) or vanilla on-premises PostgreSQL. No proprietary database dependencies.
+
+---
+
+## Solutions Page
+
+### EU Data Act compliance, challenge by challenge
+
+Every compliance obligation maps to a specific capability in the Dativo platform.
+
+#### Articles 3–4: Making product data accessible to customers
+
+The foundation of the Data Act: customers who purchase connected products have a right to access the data those products generate. Manufacturers must make this data available without undue delay, in a structured and machine-readable format. Dativo operationalizes this obligation end-to-end.
+
+Platform workflow:
+1. Register equipment install base with unified identity resolution
+2. Map datasets to equipment types and configure data sources
+3. Onboard customers to self-service portal
+4. Automated fulfillment with SLA tracking
+
+#### Article 4(3): Protecting trade secrets while sharing data
+
+The Data Act acknowledges that product data may contain trade secrets. Article 4(3) allows manufacturers to withhold or restrict data that would expose trade secrets — but only with proper classification, economic damage justification, and confidentiality agreements. Dativo provides the tools to protect your IP while remaining compliant.
+
+Platform workflow:
+1. Classify datasets as trade secrets with justification
+2. Create and manage withholding records
+3. Generate and track confidentiality agreements
+4. Conditional data access with trade secret protections
+
+#### Articles 5–6: Third-party data sharing
+
+Customers can designate third parties to receive their product data. Manufacturers must facilitate this sharing while ensuring fair compensation and preventing competitive misuse. Dativo manages the complete third-party sharing workflow, from authorization to fulfillment.
+
+Platform workflow:
+1. Customer-designated third-party authorization
+2. Data scoping and access provisioning
+3. FRAND compensation terms management
+4. Pre-contractual transparency disclosures
+
+#### Regulatory readiness & audit
+
+Supervisory authorities can request evidence that your data sharing practices comply with the Data Act. Every action in Dativo is logged with timestamps, actors, and legal basis — creating an audit trail that demonstrates compliance to regulators.
+
+Platform workflow:
+1. Real-time compliance dashboard
+2. Complete audit trail with actor attribution
+3. Regulatory export in standardized formats
+4. Compliance gap analysis and recommendations
+
+---
+
+## About Page
+
+### Building compliance infrastructure for connected products
+
+Dativo exists to make EU Data Act compliance operationally feasible for every connected product manufacturer — from a 50-person OEM running Docker Compose to a €5B industrial group deploying on Kubernetes.
+
+#### Our Mission
+
+The EU Data Act (Regulation (EU) 2023/2854) represents a fundamental shift in how manufacturers must handle the data generated by their connected products. Since September 2025, customers have a legal right to access the data produced by the products they purchase, and to share it with third parties of their choice.
+
+This creates a complex operational challenge: manufacturers must build infrastructure to register equipment, map data sources, classify trade secrets, and fulfill data access requests — continuously, for every customer, every product line, and every new data source. Doing this manually doesn't scale.
+
+Dativo exists to solve this problem. We provide the open-core platform that makes EU Data Act compliance operational, auditable, and scalable — so manufacturers can focus on building great products.
+
+#### Our Principles
+
+- **Built by engineers who use AI to move fast:** We ship in weeks what others plan for quarters. Our team embraces AI as a development accelerator — not just a product feature, but a way we build. The result is faster iteration and higher quality.
+- **Open Source Commitment:** We believe the compliance engine should be transparent and auditable. The Community Edition is genuinely useful — not a lead gen trap. The commercial features exist because enterprise compliance, advanced integrations, and managed infrastructure are genuinely harder problems worth paying for.
+- **Regulatory Depth:** We don't build generic data tools. Every feature is designed around specific Data Act articles and their practical implications for manufacturers.
+- **Industrial Focus:** We understand manufacturing environments — the data volumes, the integration complexity, the deployment constraints. CISOs at industrial OEMs won't send equipment telemetry to third-party clouds. That's why we offer self-hosted deployment with source transparency.
+
+---
+
+## Pricing
+
+### Open core. Start free, scale commercially.
+
+Deploy on your infrastructure or ours. All editions run the same codebase — commercial features are controlled via configuration, not separate builds.
+
+#### Community — Free & Open Source
+
+A genuinely useful, production-ready EU Data Act compliance engine. Not a crippled demo. Deploy on your infrastructure, audit the source code, extend it yourself.
+
+Source-available under BSL 1.1. Converts to Apache 2.0 after 3 years.
+
+Includes: Equipment registry with quality scoring, fuzzy identifier matching, CSV file connector, manual data-to-equipment mapping, customer self-service portal, data access request workflows, fulfillment queue with SLA tracking, basic audit logging, REST API, single-tenant deployment, community support (GitHub).
+
+#### Professional — Managed Cloud
+
+Everything in Community, plus enterprise compliance features, advanced connectors, and managed EU-hosted infrastructure.
+
+Includes: Managed EU-hosted cloud infrastructure, Snowflake and Databricks connectors, trade secret classification & withholding records, confidentiality agreements, compliance dashboard with regulatory export, third-party data recipient flows (Art. 5–6), pre-contractual transparency disclosures, Equipment Identity Resolution (Smart Matching), auto-suggested data mapping, Natural Language Data Explorer, advanced RBAC, priority support with SLA.
+
+#### Enterprise — Self-Hosted
+
+Full commercial capabilities deployed inside your infrastructure. Your data never leaves your network. Kubernetes-ready with dedicated support.
+
+Includes: Everything in Professional, self-hosted on your Kubernetes cluster, data never leaves your infrastructure, SSO/SAML integration, multi-tenant management, real-time streaming connectors, custom connector development support, dedicated customer success manager, SLA-based L3 support, on-site implementation available.
+
+---
+
+## Core Pages
+
+- [Homepage](https://dativo.dev/)
+- [Product](https://dativo.dev/product)
+- [Solutions](https://dativo.dev/solutions)
+- [Pricing](https://dativo.dev/pricing)
+- [About](https://dativo.dev/about)
+
+## Resources
+
+- [GitHub Repository](https://github.com/unio-lab/dativo)
+- [Contact / Request Demo](https://dativo.dev/contact)
+
+## Legal
+
+- [Privacy Policy](https://dativo.dev/privacy)
+- [Terms of Service](https://dativo.dev/terms)
+- [Imprint](https://dativo.dev/imprint)

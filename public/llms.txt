@@ -1,0 +1,28 @@
+# Dativo
+
+> Dativo is an open-core compliance platform that enables manufacturers of connected products to share product-generated data with customers and authorized third parties, as required by the EU Data Act (Regulation (EU) 2023/2854).
+
+Dativo covers the full scope of Articles 3–6 of the EU Data Act: equipment identity resolution, dataset cataloging and mapping, trade secret classification, customer self-service data access, fulfillment with SLA tracking, third-party data sharing workflows, and FRAND compensation management.
+
+Target users are compliance officers, CTOs, and digital transformation leads at mid-sized EU industrial manufacturers (pumps & valves, HVAC, construction machinery, energy equipment, industrial automation, process manufacturing).
+
+The Community Edition is available under BSL 1.1 on GitHub. The Commercial Edition adds managed deployment, Snowflake/Databricks connectors, third-party data sharing, and AI-assisted features.
+
+## Core Pages
+
+- [Homepage](https://dativo.dev/): Platform overview, how it works, and key capabilities
+- [Product](https://dativo.dev/product): Detailed platform features and architecture
+- [Solutions](https://dativo.dev/solutions): Industry-specific use cases for EU manufacturers
+- [Pricing](https://dativo.dev/pricing): Community (free) and Commercial tier comparison
+- [About](https://dativo.dev/about): Company background and mission
+
+## Resources
+
+- [GitHub Repository](https://github.com/unio-lab/dativo): Source code, self-hosting guide, and documentation
+- [Contact / Request Demo](https://dativo.dev/contact): Schedule a demo or send an inquiry
+
+## Legal
+
+- [Privacy Policy](https://dativo.dev/privacy)
+- [Terms of Service](https://dativo.dev/terms)
+- [Imprint](https://dativo.dev/imprint)
