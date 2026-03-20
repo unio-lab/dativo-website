@@ -19,8 +19,9 @@ const config: Config = {
         white: "#FEFFFF",
       },
       fontFamily: {
-        heading: ["'Segoe UI'", "system-ui", "-apple-system", "sans-serif"],
-        body: ["'Segoe UI'", "system-ui", "-apple-system", "sans-serif"],
+        heading: ["'Geist Sans'", "system-ui", "-apple-system", "sans-serif"],
+        body: ["'Geist Sans'", "system-ui", "-apple-system", "sans-serif"],
+        mono: ["'Geist Mono'", "ui-monospace", "monospace"],
       },
     },
   },
