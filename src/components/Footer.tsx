@@ -10,6 +10,7 @@ const footerLinks = {
   ],
   About: [
     { label: "About Dativo", href: "/about" },
+    { label: "Built by Unio Lab", href: "https://unio-lab.com" },
     { label: "Careers", href: "/about#careers" },
     { label: "Contact", href: "/contact" },
   ],
@@ -107,7 +108,16 @@ export default function Footer() {
               © {new Date().getFullYear()} Dativo. All rights reserved.
             </p>
             <p className="text-xs text-white/40">
-              Built for EU Data Act (Regulation (EU) 2023/2854) compliance
+              Built for EU Data Act (Regulation (EU) 2023/2854) compliance · A{" "}
+              <a
+                href="https://unio-lab.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                Unio Lab
+              </a>{" "}
+              product
             </p>
           </div>
         </div>

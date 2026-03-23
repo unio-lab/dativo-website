@@ -112,6 +112,53 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      {/* Built by Unio Lab */}
+      <section className="bg-navy/[0.02] py-20 sm:py-24">
+        <Container>
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-heading text-3xl font-bold tracking-tight text-navy">
+              Built by Unio Lab
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-grey-accent">
+              <p>
+                Dativo is a product of{" "}
+                <a
+                  href="https://unio-lab.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy font-medium underline hover:no-underline"
+                >
+                  Unio Lab
+                </a>
+                , a spec-driven product lab based in Germany, France, and
+                Tunisia. Unio Lab builds production platforms using a rigorous
+                methodology: human-authored specifications as the source of
+                truth, AI agents handling implementation under contract, and
+                human engineers governing every architecture decision and
+                quality gate.
+              </p>
+              <p>
+                Dativo was specified, built, and shipped by a two-person team
+                in weeks — not because corners were cut, but because
+                specification eliminates rework. The same lifecycle that
+                produced Dativo is available to any team with a system that
+                needs engineering.
+              </p>
+            </div>
+            <div className="mt-6">
+              <a
+                href="https://unio-lab.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-navy hover:underline"
+              >
+                See how Unio Lab works →
+              </a>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       <CTABlock
         title="Join us in building the future of industrial data compliance"
         description="We're always looking for talented people who are passionate about regulatory technology and industrial infrastructure."
