@@ -282,7 +282,6 @@ function Slide({
   isActive: boolean;
 }) {
   const isCenter = data.layout === "center";
-  const isStatement = data.layout === "statement";
  
   return (
     <div
@@ -323,10 +322,9 @@ function Slide({
         <h1
           className="font-heading font-bold text-navy leading-tight m-0 whitespace-pre-line"
           style={{
-            fontSize: isStatement ? 28 : isCenter ? 36 : 30,
+            fontSize: isCenter ? 36 : 30,
             marginBottom: data.subtitle ? 16 : data.body ? 24 : 0,
             textAlign: isCenter ? "center" : "left",
-            maxWidth: isStatement ? 780 : undefined,
           }}
         >
           {data.title}
