@@ -19,24 +19,24 @@ const slides = [
     id: "problem",
     tag: "THE CHALLENGE",
     title:
-      "Your customers can now legally request the data your devices generate.",
+      "Knowing the Data Act is not the hard part. Operationalising it is.",
     subtitle: null,
-    body: "Since September 2025, the EU Data Act gives customers of connected products a formal right to access the operational data their equipment generates. For Bürkert, that means process values from EDIP-connected devices — positioners, flowmeters, sensors — deployed across pharma lines, food plants, and water systems.\n\nThe legal review is probably done. The operational question is harder.",
+    body: "Bürkert likely already understands the regulation and may already have internal processes for handling customer requests. The harder problem is turning that into a repeatable operational system across EDIP-connected devices, multiple identifier schemes, protected IP, and evidence that stands up to scrutiny.\n\nThe question is not whether a request can be handled. It is whether every request can be handled precisely, consistently, and defensibly.",
     items: [
       {
         phase: "01",
         name: "Identity fragmentation",
-        desc: "EDIP assigns büS addresses. SAP uses material numbers. Customers use asset tags. One valve, four identifiers — and no unified view of what data exists for which equipment.",
+        desc: "EDIP assigns büS addresses. SAP uses material numbers. Customers use asset tags. One valve, different identifiers — and no reliable way to prove what data exists for which exact piece of equipment.",
       },
       {
         phase: "02",
-        name: "Trade secret exposure",
-        desc: "ValveInsight diagnostics, FLOWave calibration models, predictive algorithms — IP that must be protected under Art. 4(3) with structured economic justification, not a blanket refusal.",
+        name: "Defensible trade secret boundaries",
+        desc: "ValveInsight diagnostics, FLOWave calibration models, predictive algorithms — IP that must be protected under Art. 4(3) with structured economic justification, not case-by-case intuition or a blanket refusal.",
       },
       {
         phase: "03",
-        name: "Regulated customers will move first",
-        desc: "Pharma (GxP) and food (HACCP) customers already have data governance teams. They will exercise Data Act rights before anyone else — because they already have the processes to do it.",
+        name: "Manual processes do not scale cleanly",
+        desc: "An existing request workflow may work at low volume. The harder part is keeping responses consistent across teams, products, and regions — with SLA tracking, approval paths, and an audit trail you can defend later.",
       },
     ],
     footer:
@@ -136,32 +136,6 @@ const slides = [
     layout: "phases" as const,
   },
   {
-    id: "bigger-picture",
-    tag: "BEYOND COMPLIANCE",
-    title: "The Data Act forces a question\nyou'd eventually ask anyway.",
-    subtitle: null,
-    body: "How does Bürkert turn equipment data into a managed, governed, customer-accessible asset? EDIP is built for device communication. The layer above it — centralised data services, customer portals, governed API access — doesn't exist yet.",
-    items: [
-      {
-        phase: "→",
-        name: "Compliance infrastructure becomes commercial infrastructure",
-        desc: "The equipment registry, data catalog, and customer portal you build for compliance are the same components you need for a data services business. Build once, serve both.",
-      },
-      {
-        phase: "→",
-        name: "Customer data access becomes a differentiator",
-        desc: "Your pharma and food customers will prefer the manufacturer who gives them structured, self-service access to equipment data. Compliance becomes a competitive advantage.",
-      },
-      {
-        phase: "→",
-        name: "The investment compounds",
-        desc: "Every equipment record, every data mapping, every customer onboarded for compliance is an asset that makes the next digital service cheaper to build.",
-      },
-    ],
-    footer: "Dativo solves compliance now. The same infrastructure unlocks revenue later.",
-    layout: "phases" as const,
-  },
-  {
     id: "how-we-build",
     tag: "HOW WE BUILD",
     title: "Spec → Agent → Ship",
@@ -185,7 +159,7 @@ const slides = [
   {
     id: "enablement",
     tag: "AI ENABLEMENT",
-    title: "Your R&D engineers become 10× more productive.\nNot by working harder. By directing agents.",
+    title: "Your R&D engineers become more productive.\nNot by working harder. By directing agents.",
     subtitle: null,
     body: "Bürkert's competitive advantage is domain expertise — fluid dynamics, sensor physics, process control. That expertise doesn't get replaced by AI. It gets amplified. Your engineers define what to build. AI agents handle the implementation volume. The methodology makes that handoff precise and verifiable.",
     items: [
@@ -223,7 +197,7 @@ const slides = [
       {
         phase: "NEXT",
         name: "Scope the digital layer above EDIP",
-        desc: "If the design partnership proves the methodology: scope a cloud data platform, customer portal, or API layer as a joint engineering project. You review the specification before we write code.",
+        desc: "If the design partnership proves the methodology: scope further work packages as a joint engineering project. You review the specification before we write code.",
       },
       {
         phase: "THEN",
