@@ -72,3 +72,17 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Deck mode — hide site chrome for fullscreen presentations */
+body.deck-mode header,
+body.deck-mode footer,
+body.deck-mode [data-cookie-consent] {
+  display: none !important;
+}
+body.deck-mode main {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.deck-mode {
+  overflow: hidden;
+}
